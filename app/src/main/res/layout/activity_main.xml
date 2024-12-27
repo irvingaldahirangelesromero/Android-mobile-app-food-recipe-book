@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Lista (RecyclerView) -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvLista"
+        android:layout_width="406dp"
+        android:layout_height="605dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="70px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="208dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/alata"
+            android:text=" Escoge tu"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitulo2"
+            android:layout_width="99dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/alata"
+            android:text="comida"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+        <TextView
+            android:id="@+id/txtTitulo3"
+            android:layout_width="100dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alata"
+            android:text="favorita"
+            android:textAlignment="textStart"
+            android:textColor="#1AB20C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtTitulo2"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
